@@ -8,7 +8,7 @@ using TMPro;
 /// 컬렉션 스터디를 위한 클래스
 /// </summary>
 /// 
-public class CollectionStudy : MonoBehaviour
+public class ListStudy : MonoBehaviour
 {
     public InputField input;
     public Text output;
@@ -49,6 +49,7 @@ public class CollectionStudy : MonoBehaviour
         //print(names[0]);
         //print(names[1]); // 기존에 있던 데이터는 뒤로 밀림
 
+        //Dictionary
         library.Add("책1", 1);                   // 컬렉션 추가
         bool isExist = library.TryAdd("책1", 2); // Key가 있는지 확인하고, 없다면 추가
         library.ContainsKey("책1");              // Key가 있는지 확인
